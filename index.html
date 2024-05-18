@@ -3,9 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Site</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/blog.css">
+    <link rel="stylesheet" href="assets/form.css">
+    <title>Blog Site</title> 
 </head>
 <body>
-    
+    <header>My First Blog <div><button class="theme">Toggle theme</button></div></header>
+    <section class="main-img">
+        <div>
+            <img src="assets/First-Blog-Post-Ideas-For-Beginners.jpg">
+        </div>
+
+    </section>
+     <section class="signUp">
+        <div class="card">
+        <h2>Today's Thoughts.</h2>
+        <form method="post">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" username="Username" id="username" placeholder="Jocephuss00"/>
+            </div>
+            <div class="input-group">
+                <label for="title">title</label>
+                <input type="text" title="title" id="title" placeholder="..."/>
+            </div>
+            <div class="input-group">
+                <label for="thoughts">Your Thoughts</label>
+                <input type="text" thoughts="thoughts" id="thoughts" placeholder="thoughts"/>
+            </div>     
+            <button id="submit">Submit</button>
+        </form>
+        </div>
+     </section>
+
+
+
+    <script src="assets/logic.js"></script>
+    <script src="assets/blog.js"></script>
+    <script src="assets/form.js"></script>        
 </body>
 </html>
