@@ -4,6 +4,7 @@ const themeSwitcher = document.querySelector('#theme-switcher');
 const container = document.querySelector('.container');
 
 let mode = 'dark';
+let form = 'form';
 
 themeSwitcher.addEventListener('click', function () {
     if (mode === 'dark') {
@@ -15,3 +16,13 @@ themeSwitcher.addEventListener('click', function () {
         container.setAttribute('class', 'dark');
     }
 });
+ function validateForm() {
+    var username = document.getElementById('username').ariaValueMax;
+    var title = document.getElementById('title').value;
+    var thoughts = document.getElementById('thoughts').value;
+
+    if (username === ""|| title === "" || thoughts == "") {
+        alert("Missing required fields!!");
+        return false;
+    }
+ }
