@@ -17,34 +17,46 @@ themeSwitcher.addEventListener('click', function () {
         container.setAttribute('class', 'dark');
     }
 });
-//function validateForm() {
-//    var username = document.getElementById('username').value;
-//    var title = document.getElementById('title').value;
- //   var content = document.getElementById('content').value;
-
-//    if (username === "" || title === "" || content === "") {
- //       alert("Missing required fields!!");
- //       return false;
- //   }
-//}
-const formData = {
-    username: '',
-    title: '',
-    content: '',
-}
 
 submitBtn.addEventListener('click', function (event) {
     event.preventDefault();
-    var username = document.getElementById('username').value;
-   var title = document.getElementById('title').value;
-   var content = document.getElementById('content').value;
     
+    var username = document.getElementById('username').value;
+    var title = document.getElementById('title').value;
+    var content = document.getElementById('content').value;
+
     if (username === '' || title === '' || content === '') {
         alert('Please fill out all fields in the form.');
     } else {
-        // If the form is not blank, proceed with storing the data and redirecting
+        var formData = {
+            username: username,
+            title: title,
+            content: content
+        };
+
         localStorage.setItem('formData', JSON.stringify(formData));
         window.location.href = 'blog.html';
     }
+});
 
- });
+//const formData = {
+//    username: '',
+//    title: '',
+//    content: '',
+//}
+
+//submitBtn.addEventListener('click', function (event) {
+ //   event.preventDefault();
+//    var username = document.getElementById('username').value;
+ //  var title = document.getElementById('title').value;
+ //  var content = document.getElementById('content').value;
+    
+  //  if (username === '' || title === '' || content === '') {
+ //       alert('Please fill out all fields in the form.');
+ //   } else {
+ //       // If the form is not blank, proceed with storing the data and redirecting
+ //       localStorage.setItem('formData', JSON.stringify(formData));
+  //      window.location.href = 'blog.html';
+ //   }
+//
+// });
