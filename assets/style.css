@@ -74,6 +74,12 @@ input {
     justify-content: right;
     padding: 10px;
   }
+  
+  #thoughts {
+    display: flex;
+    height: fit-content;
+    flex-wrap: wrap;
+  }
 
 #submit {
     margin-top: 10px;
@@ -98,4 +104,8 @@ input {
     background-color: #f0ead6;
     color: black;
     height: 100%;
+}
+
+a {
+    color: black;
 }

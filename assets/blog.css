@@ -12,17 +12,68 @@ body {
 }
 
 header {
+    padding: 10px;
+    display: flex;
     border: 5px solid black;
     text-align: center;
     font-size: 40px;
+    justify-content: space-around;
+}
+header, h1 {
+    margin-right: auto;
+    margin-top: 20px;
+    font-size: 50px;
 }
 
 input {
-    margin: 5px auto;
+    margin: 5px;
     padding: 5px;
-    width: 99%;
+    width: 98%;
     height: 100px;
 }
+
 label {
     text-align: left;
+    margin: 5px;
+}
+
+.theme {
+    margin: 5px;
+    padding: 5px;
+    width: fit-content;
+    height: fit-content;
+    background-color: rgba(248, 248, 153, 0.719);
+    border-radius: 10px;
+}
+
+.theme:hover {
+    transform: scale(1.1);
+}
+
+.dark {
+    background-color: #5f6368;
+    height: 100vh;
+    color: beige;
+}
+
+.light {
+    background-color: #f0ead6;
+    color: black;
+    height: 100vh;
+}
+
+div {
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+#backbtn {
+    margin: 10px;
+    padding: 5px;
+    background-color: black;
+    color: #f0ead6;
+}
+
+a {
+    color: #f0ead6;
 }
