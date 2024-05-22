@@ -1,0 +1,74 @@
+<!-- this is code that was tested and proven but trashed for more 
+useful and cleaner code -->
+
+<!-- <style>
+    .box {
+        border: 1px solid black;
+        padding: 10px;
+        margin: 10px;
+    }
+</style> -->
+  
+  <!-- <div class="box">
+        <h2>User Input:</h2>
+        <div>
+            <strong>Username:</strong> <span id="displayUsername"></span>
+        </div>
+        <div>
+            <strong>Title:</strong> <span id="displayTitle"></span>
+        </div>
+        <div>
+            <strong>Content:</strong> <span id="displayContent"></span>
+        </div>
+    </div> -->
+
+
+    <!-- //const formData = {
+        //    username: '',
+        //    title: '',
+        //    content: '',
+        //}
+        // old code was replace by cleaner code
+        //submitBtn.addEventListener('click', function (event) {
+         //   event.preventDefault();
+        //    var username = document.getElementById('username').value;
+         //  var title = document.getElementById('title').value;
+         //  var content = document.getElementById('content').value;
+            
+          //  if (username === '' || title === '' || content === '') { 
+         //       alert('Please fill out all fields in the form.');
+         //   } else {
+         //       // If the form is not blank, proceed with storing the data and redirecting
+         //       localStorage.setItem('formData', JSON.stringify(formData));
+          //      window.location.href = 'blog.html';
+         //   }
+        //
+        // }); -->
+
+
+        <!-- document.addEventListener('DOMContentLoaded', function() {
+            var formData = JSON.parse(localStorage.getItem('formData'));
+        
+            if (formData) {
+                var blogPostDiv = document.createElement('div');
+                blogPostDiv.classList.add('blog-post');
+        
+                var usernamePara = document.createElement('p');
+                usernamePara.textContent = 'Author: ' + formData.username;
+        
+                var titlePara = document.createElement('h2');
+                titlePara.textContent = formData.title;
+        
+                var contentPara = document.createElement('p');
+                contentPara.textContent = formData.content;
+        
+                blogPostDiv.appendChild(usernamePara);
+                blogPostDiv.appendChild(titlePara);
+                blogPostDiv.appendChild(contentPara);
+        
+                document.body.appendChild(blogPostDiv); // Append the div to the body or another desired location
+            } else {
+                // Handle case where data is not found in localStorage
+                console.log('No blog post data found.');
+            }
+        }); -->
