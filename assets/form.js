@@ -30,8 +30,8 @@ themeSwitcher.addEventListener('click', function () {
 //         alert('Please fill out all fields in the form.');
 //     } else {
 //         var formData = {
-//             username: username, // storing data into local storage 
-//             title: title,       // prevents further action if fields are blank
+//             username: username, 
+//             title: title,       
 //             content: content
 //         };
         
@@ -57,7 +57,7 @@ submitBtn.addEventListener('click', function (event) {
         title: title,
         content: content
         };
-
+        //if statement prevents fields from being blank
         // Check if there are existing posts in localStorage
         var existingPosts = JSON.parse(localStorage.getItem('blogPosts')) || [];
 
