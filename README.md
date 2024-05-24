@@ -1,4 +1,6 @@
 # Blog
+I created this blog so users can create multiple blog posts that will store in local storage
+and will stay rendered as they return and create a new post.
 
 ## screenshot 
 ![image](https://github.com/jocephuss/Blog/assets/42878854/201364fa-4406-411c-9080-7bfa00cf5d92)
